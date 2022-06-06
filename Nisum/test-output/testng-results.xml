@@ -1,29 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-26T15:30:18 PKT" name="Suite" finished-at="2022-04-26T15:30:32 PKT" duration-ms="13654">
+  <suite started-at="2022-06-06T16:01:16 PKT" name="Suite" finished-at="2022-06-06T16:01:30 PKT" duration-ms="13181">
     <groups>
     </groups>
-    <test started-at="2022-04-26T15:30:18 PKT" name="Regression Test Suit" finished-at="2022-04-26T15:30:32 PKT" duration-ms="13654">
+    <test started-at="2022-06-06T16:01:16 PKT" name="Regression Test Suit" finished-at="2022-06-06T16:01:30 PKT" duration-ms="13181">
       <class name="com.arbisoft.testcases.HomeTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.arbisoft.testcases.HomeTestCases@6a2eea2a]" started-at="2022-04-26T15:30:19 PKT" name="setUp" finished-at="2022-04-26T15:30:24 PKT" duration-ms="5051" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.arbisoft.testcases.HomeTestCases@7e057f43]" started-at="2022-06-06T16:01:16 PKT" name="setUp" finished-at="2022-06-06T16:01:20 PKT" duration-ms="3639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validInputs()[pri:1, instance:com.arbisoft.testcases.HomeTestCases@6a2eea2a]" started-at="2022-04-26T15:30:24 PKT" name="validInputs" finished-at="2022-04-26T15:30:29 PKT" duration-ms="5385" status="PASS">
+        <test-method signature="validInputs()[pri:1, instance:com.arbisoft.testcases.HomeTestCases@7e057f43]" started-at="2022-06-06T16:01:20 PKT" name="validInputs" finished-at="2022-06-06T16:01:26 PKT" duration-ms="5368" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Swag Labss] but found [Swag Labs]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Swag Labss] but found [Swag Labs]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.arbisoft.pageobjects.HomePage.validCredentials(HomePage.java:42)
+at com.arbisoft.testcases.HomeTestCases.validInputs(HomeTestCases.java:41)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validInputs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.arbisoft.testcases.HomeTestCases@6a2eea2a]" started-at="2022-04-26T15:30:29 PKT" name="tearDown" finished-at="2022-04-26T15:30:29 PKT" duration-ms="130" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.arbisoft.testcases.HomeTestCases@7e057f43]" started-at="2022-06-06T16:01:27 PKT" name="tearDown" finished-at="2022-06-06T16:01:27 PKT" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.arbisoft.testcases.HomeTestCases@6a2eea2a]" started-at="2022-04-26T15:30:29 PKT" name="setUp" finished-at="2022-04-26T15:30:31 PKT" duration-ms="2070" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.arbisoft.testcases.HomeTestCases@7e057f43]" started-at="2022-06-06T16:01:27 PKT" name="setUp" finished-at="2022-06-06T16:01:29 PKT" duration-ms="2160" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="invalidInputs()[pri:2, instance:com.arbisoft.testcases.HomeTestCases@6a2eea2a]" started-at="2022-04-26T15:30:31 PKT" name="invalidInputs" finished-at="2022-04-26T15:30:32 PKT" duration-ms="269" status="FAIL">
+        <test-method signature="invalidInputs()[pri:2, instance:com.arbisoft.testcases.HomeTestCases@7e057f43]" started-at="2022-06-06T16:01:29 PKT" name="invalidInputs" finished-at="2022-06-06T16:01:29 PKT" duration-ms="284" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Swag Labss] but found [Swag Labs]]]>
@@ -70,7 +113,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidInputs -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.arbisoft.testcases.HomeTestCases@6a2eea2a]" started-at="2022-04-26T15:30:32 PKT" name="tearDown" finished-at="2022-04-26T15:30:32 PKT" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.arbisoft.testcases.HomeTestCases@7e057f43]" started-at="2022-06-06T16:01:30 PKT" name="tearDown" finished-at="2022-06-06T16:01:30 PKT" duration-ms="88" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

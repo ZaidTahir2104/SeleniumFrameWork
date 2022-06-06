@@ -10,6 +10,7 @@
         <methods>
           <include name="invalidInputs"/>
           <include name="tearDown"/>
+          <include name="validInputs"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.arbisoft.testcases.HomeTestCases -->

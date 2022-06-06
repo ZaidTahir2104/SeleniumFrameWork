@@ -39,7 +39,7 @@ public class HomePage extends TestBase {
 		  String passwords = prop.getProperty("passwords");
 		  password.sendKeys(passwords);
 		  login.click();
-		  Assert.assertEquals(driver.getTitle(), "Swag Labs");  
+		  Assert.assertEquals(driver.getTitle(), "Swag Labss");  
     }
 	//Title unverified 
     public void invalidCredentials() {
